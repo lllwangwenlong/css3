@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #container {
+            width: 500px;
+            height: 0px;
+            overflow: hidden;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">点击显示菜单</button>
+    <div id="container">
+        <p>我是内容</p>
+        <p>我是内容</p>
+        <p>我是内容</p>
+        <p>我是内容</p>
+        <p>我是内容</p>
+        <p>我是内容</p>
+        <p>我是内容</p>
+    </div>
+</body>
+<script>
+    function $(selector) {
+        return document.querySelector(selector)
+    }
+
+    let btn = $('#btn')
+    let container = $('#container')
+    let isOpen = false
+
+    btn.onclick = function () {
+        if(!isOpen) {
+            isOpen = !isOpen
+            let height
+            container.style.height = 'auto'
+            height = container.offsetHeight
+            container.style.height = '0px'
+            container.style.transition = 'height ease 1s'
+            container.offsetHeight
+            container.style.height = height + 'px'
+        }else {
+            isOpen = !isOpen
+            container.style.height = '0px'
+        }
+    }
+</script>
+</html>

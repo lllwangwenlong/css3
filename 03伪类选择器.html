@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*:root {*/
+            /*font-size: 100px;*/
+        /*}*/
+
+        /*.title {*/
+            /*font-size: 1rem;*/
+        /*}*/
+        /*.text {*/
+            /*font-size: 20px;*/
+        /*}*/
+        
+        /*p:first-child {*/
+            /*color: #0f0;*/
+        /*}*/
+        
+        /*p:last-child {*/
+            /*color: #ff0;*/
+        /*}*/
+        
+        /*p:nth-child(4) {*/
+            /*color: #f00;*/
+        /*}*/
+        
+        /*p:nth-child(even) {*/
+            /*color: #f0f;*/
+        /*}*/
+        
+        /*p:nth-child(odd) {*/
+            /*color: #f00;*/
+        /*}*/
+
+        /*p:nth-child(-n+3) {*/
+            /*color: #f00;*/
+        /*}*/
+        
+        /*p:nth-of-type(2) {*/
+            /*color: #f00;*/
+        /*}*/
+
+        /*input:focus {*/
+            /*color: #f00;*/
+        /*}*/
+
+        /*input:checked {*/
+            /*width: 100px;*/
+            /*height: 100px;*/
+            /*font-size: 50px;*/
+        /*}*/
+        /*.input {*/
+            /*width: 100%;*/
+            /*height: 100%;*/
+            /*background-color: #f00;*/
+        /*}*/
+
+        /*.box:checked + .input {*/
+            /*color: #fff;*/
+            /*background-color: #409eff;*/
+        /*}*/
+        div {
+            width: 50px;
+            height: 50px;
+            background-color: #f00;
+        }
+        :empty {
+            background-color: #ff0;
+        }
+
+        .parent :not(.box) {
+            background-color: #0f0;
+        }
+    </style>
+</head>
+<body>
+    <!--<h1 class="title">-->
+        <!--我是标题-->
+    <!--</h1>-->
+    <!--<div class="text">-->
+        <!--我不是标题-->
+    <!--</div>-->
+    <!--<div class="parent">-->
+        <!--<h3>我是标题</h3>-->
+        <!--<h3>我是标题</h3>-->
+        <!--<h3>我是标题</h3>-->
+        <!--<h3>我是标题</h3>-->
+        <!--<h3>我是标题</h3>-->
+        <!--<h3>我是标题</h3>-->
+        <!--<p>我是内容1</p>-->
+        <!--<p>我是内容2</p>-->
+        <!--<p>我是内容3</p>-->
+        <!--<p>我是内容4</p>-->
+        <!--<p>我是内容5</p>-->
+        <!--<p>我是内容6</p>-->
+
+    <!--</div>-->
+
+    <!--<input type="text">-->
+    <!--<label style="width: 10px;height: 10px;background-color:#f1f1f1;display: block">-->
+        <!--<input type="radio" class="box" name="color" value="red" style="display: none">-->
+        <!--<div class="input">-->
+            <!---->
+        <!--</div>-->
+    <!--</label>-->
+    <div class="parent">
+        <div class="box">我不是空的</div>
+        <div class="box"></div>
+        <div class="notbox">
+
+        </div>
+    </div>
+</body>
+</html>

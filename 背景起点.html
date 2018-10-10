@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0;
+        }
+        .box {
+            width: 500px;
+            height: 500px;
+            padding: 20px;
+            border: 10px solid rgba(0, 0, 0, .2);
+            background: url("./imgs/6.jpg") no-repeat;
+            /*background-origin: border-box;//背景图相对于边框盒进行定位*/
+            background-origin: content-box;//背景图相对于内容框进行定位
+            -webkit-background-size: 200px;
+            background-size: contain;//在保证背景图完整显示的情况下，尽可能的缩放背景图到等高或等宽
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

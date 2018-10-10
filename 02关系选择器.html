@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*.box h1 {*/
+            /*color: #f00;*/
+        /*}*/
+
+        /*.box>h1{*/
+            /*color: #f00;*/
+        /*}*/
+        
+        /*.special + p {*/
+            /*color: #f00;*/
+        /*}*/
+
+        .special ~p {
+            color: #f00;
+        }
+    </style>
+</head>
+<body>
+    <!--<div class="box">-->
+        <!--<h1>-->
+            <!--我是外面的h1-->
+        <!--</h1>-->
+        <!--<div class="son">-->
+            <!--<h1>-->
+                <!--我是里面的h1-->
+            <!--</h1>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <div class="content">
+        <p>我是内容</p>
+        <p class="special">我是内容</p>
+        <p>我是内容3</p>
+        <p>我是内容</p>
+        <p>我是内容</p>
+        <p>我是内容</p>
+    </div>
+</body>
+</html>

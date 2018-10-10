@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            position: relative;
+            width: 500px;
+            height: 60px;
+            background-color: #0f0;
+         }
+
+        .box:after {
+            content: '';
+            position: absolute;
+            left: 12.5%;
+            bottom: -24px;
+            transform: translateY(24px);
+            width: 0;
+            height: 0;
+            border: 24px solid transparent;
+            border-top: 24px solid #fff;
+        }
+
+        .box1 {
+            width: 500px;
+            height: 500px;
+            border: 24px solid #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+    <div class="box1">
+
+    </div>
+</body>
+</html>

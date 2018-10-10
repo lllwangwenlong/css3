@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: #f00;
+            margin: 50px;
+        }
+
+        /*.box {*/
+            /*background-color: #000;*/
+        /*}*/
+
+        /*[title] {*/
+            /*background-color: #0ff;*/
+            /*color: #fff;*/
+        /*}*/
+
+        /*[title *='998'] {*/
+            /*background-color: #ff0;*/
+        /*}*/
+        
+        /*[title ^="998"] {*/
+            /*background-color: #f0f;*/
+        /*}*/
+
+        /*[title $="998"] {*/
+            /*background-color: pink;*/
+        /*}*/
+        
+        /*[title ~="998"] {*/
+            /*background-color: #f1f1f1;*/
+        /*}*/
+
+        [title |="998"] {
+            background-color: #0ff;
+        }
+
+    </style>
+</head>
+<body>
+    <div title="998sss" class="box">
+        
+    </div>
+    <div class="box" title="sss998">
+        
+    </div>
+    <div title="xxx 998 xxx">
+
+    </div>
+
+    <div title="998-sss">
+
+    </div>
+    <h1 title class="box">
+        我是标题
+    </h1>
+</body>
+</html>
